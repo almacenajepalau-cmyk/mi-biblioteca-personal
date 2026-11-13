@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca Personal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>📚 Mi Biblioteca Personal</h1>
+        
+        <form id="form-libro">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <input type="text" id="autor" placeholder="Autor" required>
+            <select id="genero">
+                <option value="fantasia">Fantasía</option>
+                <option value="ciencia-ficcion">Ciencia Ficción</option>
+                <option value="romance">Romance</option>
+                <option value="misterio">Misterio</option>
+                <option value="terror">Terror</option>
+                <option value="historica">Histórica</option>
+                <option value="no-ficcion">No Ficción</option>
+                <option value="biografia">Biografía</option>
+                <option value="poesia">Poesía</option>
+                <option value="autoayuda">Autoayuda</option>
+            </select>
+            <button type="submit">Agregar Libro</button>
+        </form>
+
+        <div id="filtros">
+            <button data-filtro="todos">Todos</button>
+            <button data-filtro="leidos">Leídos</button>
+             <button data-filtro="no-leidos">No Leídos</button>
+        </div>
+
+        <div id="lista-libros"></div>
+        <div id="estadisticas"></div>
+    </div>
+    <script src="js/libro.js" defer></script>
+    <script src="js/script.js" defer></script>
+    
+
+</body>
+</html>
